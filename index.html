@@ -151,15 +151,20 @@
           'env' : 'Local',
           'document' : './shaver/0.svf'
       };
+
+      var options1 = {
+          'env' : 'Local',
+          'document' : './svfs/test1/Resource/3D вид/{3D} 6301435/{3D}.svf'
+      };
     
-      Autodesk.Viewing.Initializer(options, function() {
-        viewer.start(options.document, options);
+      Autodesk.Viewing.Initializer(options1, function() {
+        viewer.start(options1.document, options1);
       });
       Autodesk.Viewing.Initializer(options, function() {
         viewer1.start(options.document, options);
       });
-      Autodesk.Viewing.Initializer(options, function() {
-        viewer2.start(options.document, options);
+      Autodesk.Viewing.Initializer(options1, function() {
+        viewer2.start(options1.document, options1);
       });
       Autodesk.Viewing.Initializer(options, function() {
         viewer3.start(options.document, options);

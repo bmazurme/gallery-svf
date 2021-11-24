@@ -1,6 +1,6 @@
 .container {
-  width: 640px;
-  height: 540px;
+  max-width: 640px;
+  max-height: 540px;
   grid-area: container;
   background-color: #fff;
   border: 1px solid #ededed;
