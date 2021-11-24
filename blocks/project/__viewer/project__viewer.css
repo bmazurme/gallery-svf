@@ -1,7 +1,12 @@
 .project__viewer {
   grid-area: viewer;
+  /* width: 640px;
+  height: 540px; */
   width: 640px;
   height: 540px;
+  /* grid-area: container; */
+  /* background-color: #fff; */
+  border: 1px solid #ededed;
 }
 
 .adsk-viewing-viewer #toolbar-modelStructureTool{display:none!important}

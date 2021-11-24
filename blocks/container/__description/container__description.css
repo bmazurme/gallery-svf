@@ -1,6 +1,8 @@
 .container__description {
   margin-top: 50px;
   margin-bottom: 0;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 16px;
+  line-height: 26px;
 }
