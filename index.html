@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery">
+    <meta name="keywords" content="Forge">
+    <meta name="author" content="Bogdan Mazur">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Gallery</title>
+
+    <!-- The Viewer JS & CSS-->
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=v7.*" type="text/css">
+  <script language="JavaScript" src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js?v=v7.*"></script>
+  </head>
+
+  <body class="root">
+    <div class="page">
+      <section class="header">
+        <a class="header__link" target="_blank" href="https://step.ru/">
+          <img class="logo" src="./images/logo.svg" alt="Логотип">
+        </a>
+        
+        <nav class="header__menu">
+          <a class="header__link" target="_blank" href="https://step.ru/">Step</a>
+          <a class="header__link" href="#">Link 2</a>
+        </nav>
+        <p class="header__subtitle">Same text</p>
+        <h1 class="header__title">Проекты</h1>
+        
+      </section>
+
+      <main class="content">
+        <section class="lead">
+          <!-- <nav class="header__menu">
+            <a class="header__link" target="_blank" href="https://step.ru/">Step</a>
+            <a class="header__link" href="#">Link 2</a>
+          </nav>
+          <p class="header__subtitle">Same text</p>
+          <h1 class="header__title">Проекты</h1> -->
+          
+        </section>
+
+        <section class="projects">
+          <article class="project">
+            <div class="container">
+              <h2 class="container__title">Name</h2>
+              <p class="container__location">Location</p>
+              <p class="container__description">Location</p>
+            </div>
+
+            <div class="project__viewer" id="MyViewerDiv"></div>
+          </article>
+
+          <article class="project">
+            <div class="container">
+              <h2 class="container__title">Name</h2>
+              <p class="container__location">Location</p>
+              <p class="container__description">Location</p>
+            </div>
+
+            <div class="project__viewer" id="MyViewerDiv1"></div>
+          </article>
+
+          <article class="project">
+            <div class="container">
+              <h2 class="container__title">Name</h2>
+              <p class="container__location">Location</p>
+              <p class="container__description">Location</p>
+            </div>
+
+            <div class="project__viewer" id="MyViewerDiv2"></div>
+          </article>
+
+          <article class="project">
+            <div class="container">
+              <h2 class="container__title">Name</h2>
+              <p class="container__location">Location</p>
+              <p class="container__description">Location</p>
+            </div>
+
+            <div class="project__viewer" id="MyViewerDiv3"></div>
+          </article>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <p class="footer__copyright">
+          &copy; STEP LOGIC 2021. Все права защищены.
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      var myViewerDiv = document.getElementById('MyViewerDiv');
+      var myViewerDiv1 = document.getElementById('MyViewerDiv1');
+      var myViewerDiv2 = document.getElementById('MyViewerDiv2');
+      var myViewerDiv3 = document.getElementById('MyViewerDiv3');
+
+      var viewer = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv);
+      var viewer1 = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv1);
+      var viewer2 = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv2);
+      var viewer3 = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv3);
+
+      var options = {
+          'env' : 'Local',
+          'document' : './shaver/0.svf'
+      };
+    
+      Autodesk.Viewing.Initializer(options, function() {
+        viewer.start(options.document, options);
+      });
+      Autodesk.Viewing.Initializer(options, function() {
+        viewer1.start(options.document, options);
+      });
+      Autodesk.Viewing.Initializer(options, function() {
+        viewer2.start(options.document, options);
+      });
+      Autodesk.Viewing.Initializer(options, function() {
+        viewer3.start(options.document, options);
+      });
+
+      let win = myViewerDiv.querySelector('.adsk-viewing-viewer');
+      win.style= "height: 540px; width: 640px; overflow: hidden;";
+
+      let win1 = myViewerDiv1.querySelector('.adsk-viewing-viewer');
+      win1.style= "height: 540px; width: 640px; overflow: hidden;";
+
+      let win2 = myViewerDiv2.querySelector('.adsk-viewing-viewer');
+      win2.style= "height: 540px; width: 640px; overflow: hidden;";
+
+      let win3 = myViewerDiv3.querySelector('.adsk-viewing-viewer');
+      win3.style= "height: 540px; width: 640px; overflow: hidden;";
+      
+    </script>
+
+  </body>
+</html>

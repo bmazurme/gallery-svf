@@ -1,0 +1,14 @@
+.project__viewer {
+  grid-area: viewer;
+  width: 640px;
+  height: 540px;
+}
+
+.adsk-viewing-viewer #toolbar-modelStructureTool{display:none!important}
+.adsk-viewing-viewer #toolbar-explodeTool{display:none!important}
+.adsk-viewing-viewer #toolbar-measurementSubmenuTool{display:none!important}
+.adsk-viewing-viewer #settingsTools{display:none!important}
+.adsk-viewing-viewer #navTools{display:none!important}
+
+
+

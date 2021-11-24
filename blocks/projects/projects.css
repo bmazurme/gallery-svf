@@ -1,0 +1,9 @@
+.projects {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 0;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
