@@ -1,0 +1,19 @@
+
+.screen__close {
+  position: fixed;
+  height: 32px;
+  width: 32px;
+  /* background-image: url(../../../images/close.png); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed; */
+  top: -40px;
+  left: 1010px;
+  z-index: 20;
+  background-color: brown;
+}
+
+.screen__close:hover {
+  opacity: 0.6;
+  cursor:pointer;
+}
