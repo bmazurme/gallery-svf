@@ -4,4 +4,13 @@
   width: 640px;
   height: 540px;
   z-index: 0;
+  opacity: 1;
 }
+
+/* .project__viewer:hover {
+  transition: 0.4s ease;
+  width: 640px;
+  height: 540px;
+  opacity: 1;
+  cursor: pointer;
+} */

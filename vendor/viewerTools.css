@@ -2,5 +2,7 @@
 .adsk-viewing-viewer #toolbar-modelStructureTool{display:none!important}
 .adsk-viewing-viewer #toolbar-explodeTool{display:none!important}
 .adsk-viewing-viewer #toolbar-measurementSubmenuTool{display:none!important}
-.adsk-viewing-viewer #settingsTools{display:none!important}
+/* .adsk-viewing-viewer #settingsTools{display:none!important} */
 .adsk-viewing-viewer #navTools{display:none!important}
+.adsk-viewing-viewer #toolbar-propertiesTool{display:none!important}
+.adsk-viewing-viewer #toolbar-settingsTool{display:none!important}

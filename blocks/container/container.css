@@ -7,10 +7,12 @@
   opacity: 1;
   padding: 0 60px;
 }
-.container:hover {
+
+/* .container:hover {
   background-color: #069583;
   color: #fff;
   transition: 0.4s ease;
   border: 1px solid #069583;
+} */
+
   /* transition: all 0.6s ease-in-out; */
-}
