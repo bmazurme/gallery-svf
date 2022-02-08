@@ -1,13 +1,10 @@
-# Viewer Autodesk Foge
+# Viewer Autodesk Forge
+_____________________
 
 ### Тестовая работа
 
-#### Points
-* HTML
-* CSS
-* JS
-* БЭМ
-* Foge
+### Стек технологий
+HTML, CSS, JS, Forge
 
 #### Links
 * [Проект](https://bmazurme.github.io/gallery-svf/)
