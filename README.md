@@ -1,5 +1,8 @@
 # Viewer Autodesk Forge
-_____________________
+
+# Демо
+[Проект](https://bmazurme.github.io/gallery-svf/)
+![Alt-текст](https://github.com/bmazurme/gallery-svf/blob/main/images/svg.PNG "demo")
 
 ### Тестовая работа
 
@@ -7,5 +10,4 @@ _____________________
 HTML, CSS, JS, Forge
 
 #### Links
-* [Проект](https://bmazurme.github.io/gallery-svf/)
 * [Autodesk Forge](https://forge.autodesk.com/)
